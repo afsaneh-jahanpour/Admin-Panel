@@ -1,11 +1,16 @@
 
 import './App.css';
+import SideBar from './Components/SideBar';
+import Header from './Components/Header';
 
 function App() {
   return (
-    <h1 className='text-3xl font-bold underline text-red-600'>
-      Hello World
-      </h1>
+    <div  data-theme=" kidsydark" className='flex w-full h-screen'>
+     <SideBar/>
+      <section className='w-10/12 bg-base-100 h-screen'>
+        <Header/>
+      </section>
+    </div>
   );
 }
 
